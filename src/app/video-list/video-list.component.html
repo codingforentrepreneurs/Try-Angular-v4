@@ -2,7 +2,14 @@
   {{ title }}
 </h1>
 
-<p *ngFor='let item of videoList'>
-    <a href='videos/{{ item.slug }}' *ngIf='item.slug == "item-1"'>{{ item.name }}</a>
-    <a href='videos/{{ item.slug }}' *ngIf='item.slug != "item-1"' style='color:red;'>{{ item.name }}</a>
-</p>
+<div *ngFor='let abc of videoList'>
+    <a href='videos/{{ abc.slug }}' >{{ abc.name }}</a>
+    <div [innerHTML]='abc.embed'></div>
+    <div [innerHTML]='someItem'></div>
+
+    <div style="position:relative;height:0;padding-bottom:56.25%" *ngIf='abc.embed'>
+        <iframe [src]="getEmbedUrl(abc)" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+    </div>
+
+
+</div>
