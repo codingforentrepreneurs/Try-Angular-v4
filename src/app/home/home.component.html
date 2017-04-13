@@ -2,18 +2,18 @@
         <div class='row'>
             <div class='col-sm-12'>
             <carousel class='text-center'>
-              <slide>
-                <a class='' href='/videos/video-1'>
-                    <img class='img-main-carousel'  src="assets/images/nature/4.jpg" alt="First slide">
+              <slide *ngFor='let imageObj of homeImageList'>
+                <a class='' href='/videos/video-1' (click)='preventNormal($event, imageObj)'>
+                    <img class='img-main-carousel'  [src]='imageObj.image' alt="First slide">
                 </a>
                 <div class="carousel-caption">
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  <p><a class='btn btn-default' href='/videos/video-1'>Video 1</a></p>
+                  <h3>{{ imageObj.title }}</h3>
+                  
+                  <p><a class='btn btn-default' href='{{ imageObj.link }}'>Video 1</a></p>
                 </div>
               </slide>
-              <slide>
-                 <a class='' href='/videos/video-1'>
+             <!--  <slide>
+                 <a class='' #imageTwo href='/videos/video-1' (click)='preventNormal($event, imageTwo)'>
                     <img class='img-main-carousel' src="assets/images/nature/5.jpg" alt="Second slide">
                 </a>
                 <div class="carousel-caption">
@@ -23,15 +23,15 @@
                 </div>
               </slide>
               <slide>
-               <a class='' href='/videos/video-1'>
-                    <img class='img-main-carousel' src="assets/images/nature/6.jpg" alt="Third slide">
+               <a class='' #imageThree href='/videos/video-1' (click)='preventNormal($event, imageThree)'>
+                    <img class='img-main-carousel' src="assets/images/nature/1.jpg" alt="Third slide">
                 </a>
                 <div class="carousel-caption">
                   <h3>Third slide label</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                   <p><a class='btn btn-default' href='/videos/video-1'>Video 1</a></p>
                 </div>
-              </slide>
+              </slide> -->
             </carousel>
         </div>
     </div>
