@@ -9,6 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 export class SearchDetailComponent implements OnInit, OnDestroy {
    private routeSub:any;
    query: string;
+
+   
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
