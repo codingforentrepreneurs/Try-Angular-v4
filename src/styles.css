@@ -11,3 +11,7 @@
 .carousel-control.right, .carousel-control.left {
     cursor: pointer;
 }
+
+.search-inline .navbar-left, .search-inline .navbar-right {
+    float: none !important;
+}
