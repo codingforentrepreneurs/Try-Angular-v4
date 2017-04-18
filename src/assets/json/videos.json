@@ -1,0 +1,17 @@
+[
+    {
+     "name": "Welcome",
+     "slug": "item-1",
+     "embed": "1hyjLD7pk10"
+    },
+    {
+     "name": "Item 2",
+     "slug": "item-2",
+     "embed": "1hyjLD7pk10"
+    },
+    {
+     "name": "Item 3",
+     "slug": "item-3",
+     "embed": null
+    }
+]
