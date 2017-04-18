@@ -1,15 +1,15 @@
 
         <div class='row'>
             <div class='col-sm-12'>
-            <carousel class='text-center'>
+            <carousel class='text-center' *ngIf='homeImageList'>
               <slide *ngFor='let imageObj of homeImageList'>
                 <a class='' href='/videos/video-1' (click)='preventNormal($event, imageObj)'>
                     <img class='img-main-carousel'  [src]='imageObj.image' alt="First slide">
                 </a>
                 <div class="carousel-caption">
-                  <h3>{{ imageObj.title }}</h3>
+                  <h3>{{ imageObj.name }}</h3>
                   
-                  <p><a class='btn btn-default' href='{{ imageObj.link }}'>Video 1</a></p>
+                  <p><a class='btn btn-default' href='/videos/{{ imageObj.slug }}'>View</a></p>
                 </div>
               </slide>
              <!--  <slide>
