@@ -32,6 +32,22 @@ export class VideoService {
               .catch(this.handleError)
   }
 
+  search(query){
+    return this.http.get(endpoint)
+              .map(response=>{
+                     let data = []
+                     let req = response.json().filter(item=>{
+                                    if (item.name.indexOf(query) >=0) {
+                                         data.push(item)
+                                    }
+                                })
+                     
+                     return data
+               })
+              .catch(this.handleError)
+
+  }
+
   private handleError(error:any, caught:any): any{
       console.log(error, caught)
   }
