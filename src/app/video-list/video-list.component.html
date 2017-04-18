@@ -1,12 +1,14 @@
 <h1>
   {{ title }}
 </h1>
-
-<div *ngFor='let abc of videoList'>
-    <h1><a routerLink='/videos/{{ abc.slug }}' routerLinkActive="active">{{ abc.name }}</a></h1>
-    <div style="position:relative;height:0;padding-bottom:56.25%" *ngIf='abc.embed'>
-        <iframe [src]="getEmbedUrl(abc) | safe" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen ></iframe>
+<div class='row'>
+    <div class='col-sm-4' *ngFor='let abc of videoList'>
+        <div class="thumbnail">
+          <a routerLink='/videos/{{ abc.slug }}' routerLinkActive="active" *ngIf='abc.image'><img [src]='abc.image' alt="{{ abc.name }} image"></a>
+          <div class="caption">
+            <h3><a routerLink='/videos/{{ abc.slug }}' routerLinkActive="active">{{ abc.name }}</a></h3>
+            <p><a routerLink='/videos/{{ abc.slug }}' routerLinkActive="active" class="btn btn-primary" role="button">View</a></p>
+          </div>
+        </div>
     </div>
-    <hr/>
-
 </div>

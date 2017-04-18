@@ -15,3 +15,7 @@
 .search-inline .navbar-left, .search-inline .navbar-right {
     float: none !important;
 }
+
+.img-center {
+    margin: 0 auto;
+}
