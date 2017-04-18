@@ -3,7 +3,7 @@
 </p>
 
 <div *ngFor='let abc of videoList'>
-    <h1><a href='videos/{{ abc.slug }}' >{{ abc.name }}</a></h1>
+    <h1><a routerLink='/videos/{{ abc.slug }}' routerLinkActive="active">{{ abc.name }}</a></h1>
     <div style="position:relative;height:0;padding-bottom:56.25%" *ngIf='abc.embed'>
         <iframe [src]="getEmbedUrl(abc) | safe" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen ></iframe>
     </div>
