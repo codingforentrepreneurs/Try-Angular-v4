@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/cfe/Desktop/ngSrvupTest"
 		}
 	]
 }
