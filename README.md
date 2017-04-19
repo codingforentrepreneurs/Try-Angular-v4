@@ -56,3 +56,7 @@ Try Angular v4 is an introduction to Angular version 4 by creating an applicatio
 [25 - Improve Styling](../../tree/300910d9e703f8195cd345b729a0cf7d12dd54ff)
 
 [26 - ngClass](../../tree/2a2ec8572e6445cc8d64a328512a776a02ccbb69)
+
+[27 - ngBuild and Deploy to Heroku](../../tree/ca527439ff80655c0084e76d94cef3c130b1e8d5)
+
+[27 part 2 - Include Live Heroku ngSrvupTest app](../../tree/e103e3fd9173a41651e70afb32905f838d6f5f70)
