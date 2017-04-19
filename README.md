@@ -7,6 +7,8 @@ Try Angular v4 is an introduction to Angular version 4 by creating an applicatio
 
 [Watch](https://www.codingforentrepreneurs.com/projects/try-angular-v4/)
 
+Live Heroku ngSrvupTest app done in video 27's code is [here](https://github.com/codingforentrepreneurs/Try-Angular-v4/tree/master/ngSrvupTestSrc)
+
 ## Lecture Code
 
 [3 - App Module & Component](../../tree/fd213f5972412f6eee8f4554855f71c8ee0f8174)
@@ -59,4 +61,4 @@ Try Angular v4 is an introduction to Angular version 4 by creating an applicatio
 
 [27 - ngBuild and Deploy to Heroku](../../tree/ca527439ff80655c0084e76d94cef3c130b1e8d5)
 
-[27 part 2 - Include Live Heroku ngSrvupTest app](../../tree/e103e3fd9173a41651e70afb32905f838d6f5f70)
+
