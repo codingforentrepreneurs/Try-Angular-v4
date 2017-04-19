@@ -61,5 +61,5 @@ Live Heroku ngSrvupTest app done in video 27's code is [here](https://github.com
 
 [27 - ngBuild and Deploy to Heroku](../../tree/ca527439ff80655c0084e76d94cef3c130b1e8d5)
 
-[Live Heroku ngSrvupTest app code](https://github.com/codingforentrepreneurs/Try-Angular-v4/tree/master/ngSrvupTestSrc)
+[27 - Live Heroku ngSrvupTest app code](https://github.com/codingforentrepreneurs/Try-Angular-v4/tree/master/ngSrvupTestSrc)
 
